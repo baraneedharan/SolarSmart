@@ -1,0 +1,433 @@
+/* Solar smart */
+/* Author: Baraneedharan M */
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	/* font-family: inherit; */
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/*-------------------------------------------------
+FONTFACE: CUSTOM FONT DECLARATION
+-------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------
+BASIC STYLES
+-------------------------------------------------*/
+
+
+
+body {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #fff;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+
+/*-------------------------------------------------
+OTHER STYLES
+-------------------------------------------------*/
+
+.row {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+
+.header {
+
+}
+
+
+.primary-header {
+	background: #2d2d2a;
+	height: 42px;
+}
+
+
+.secondary-header {
+	background: #ffffff;
+	height: 42px;
+}
+
+.logo-cont {
+	position: absolute;
+	z-index: 9999;
+}
+
+.logo {
+background: url("images/logo.png") no-repeat 0 0;
+display: inline-block;
+height: 100px;
+width: 110px;
+}
+
+.login-signup {
+	float: right;
+	margin-top: 5px;
+}
+
+.login-signup ul li {
+	display: inline-block;
+}
+
+
+.login-signup ul li a {
+	display: inline-block;
+	height: 30px;
+	width: 74px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+.sign-up-btn {
+	background: #c62329;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.login-btn {
+	background: #e4e4e2;
+	color: #333333;
+}
+
+.sub-navigation {
+margin-left: 125px;
+padding-top: 12px;
+}
+
+.sub-navigation ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.sub-navigation ul li a {
+	font-size: 14px;
+	color: #424141;
+}
+
+#map-canvas { height: 100% }
+
+.banner {
+	height: 520px;
+}
+
+.review-section,
+.top-installer-section {
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.review-section h2,
+.top-installer-section h2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+	margin: 35px 0;
+}
+
+
+
+.individual-review,
+.individual-installer {
+display: inline-block;
+width: 30%;
+margin-right: 2.8%;
+}
+
+.individual-review:last-child,
+.individual-installer:last-child {
+	margin-right: 0;
+}
+
+.review-details p {
+	color: #6d6d66;
+	font-size: 13px;
+}
+
+.review-details {
+	position: relative;
+}
+
+
+.profile img {
+	float: left;
+}
+
+.profile .profile-detail {
+	float: left;
+	margin-left: 8px;
+}
+
+.profile-name {
+	font-size: 16px;
+	color: #bf1b20;
+	margin-top: 4px;
+	display: inline-block;
+}
+
+.followers-count {
+	font-size: 12px;
+	color: #989797;
+	margin: 4px 0;
+}
+
+.profile-cmpny-name {
+	font-size: 12px;
+	background: #c62329;
+	color: #fff;
+	padding: 4px;
+	display: inline-block;
+}
+
+
+.review-details h3 {
+	color: #898989;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.review-details .reviewer-loc a {
+	color: #c62329;
+	font-size: 13px;
+}
+
+.review-details .reviewer-loc span {
+	color: #333;
+	font-size: 13px;
+}
+
+.rate-box {
+position: absolute;
+right: 0;
+top: 0;
+width: 40px;
+}
+
+.rate-box label {
+	font-size: 12px;
+	color: #6d6d66;
+	text-transform: uppercase;
+}
+
+.rate-box .rate {
+	width: 40px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #fefefe;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.medium-rated {
+	background: #f7941f;
+}
+
+.good-rated {
+	background: #63a800;
+}
+
+.reviewer-loc {
+margin: 10px 0;
+}
+
+
+.read-more {
+color: #bf1b20;
+font-size: 12px;
+margin: 12px 0px;
+display: inline-block;
+}
+
+
+.view-all-btn {
+	color: #898989;
+	font-weight: bold;
+	font-size: 14px;
+	background: #e1e1e1;
+	height: 40px;
+	width: 108px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	margin: 10px 0 30px;
+}
+
+
+.individual-installer {
+	background: #f2f2f2;
+	border: 1px solid #b9b9b9;
+	overflow: hidden;
+}
+
+.individual-installer a {
+	color: #c62329;
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.individual-installer p {
+	color: #272727;
+	font-size: 14px;
+}
+
+.installer-details {
+	padding: 10px;
+}
+
+
+footer {
+	background: #2d2d2a;
+	border-top: 3px solid #c62329;
+	padding: 20px 0;
+}
+
+.footer-nav li {
+	display: inline-block;
+
+}
+
+.footer-nav-divider {
+	margin: 0px 6px;
+}
+
+.footer-nav li,
+.footer-nav li a {
+	color: #aeaeae;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.copyright {
+		color: #aeaeae;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.follow-us p {
+			color: #aeaeae;
+	font-size: 12px;
+}
+
+.social-icons li {
+	display: inline-block;
+}
+
+.social-icons a {
+background: url("images/social-icons.png") no-repeat 0 0 transparent;
+height: 38px;
+width: 42px;
+display: inline-block;
+}
+
+.social-icons a.gplus-icon {
+	background-position: -5px 2px;
+}
+
+.social-icons a.tw-icon {
+	background-position: -51px 2px;
+}
+
+.social-icons a.fb-icon {
+	background-position: -51px 2px;
+}
+
+
+
+
+
+
+
+
+
