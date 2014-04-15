@@ -8,6 +8,8 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/custom.css" />
 </head>
 
@@ -23,8 +25,8 @@
             </div>
        			<div class="login-signup">
        				<ul>
-       					<li> <a href="#" class="sign-up-btn">SIGN UP</a> </li>
-       					<li> <a href="#" class="login-btn">LOGIN</a> </li>
+                <li> <a href="Javascript:void(0);" data-toggle="modal" data-target="#signup_modal" class="sign-up-btn">SIGN UP</a> </li>
+                <li> <a href="Javascript:void(0);" data-toggle="modal" data-target="#login_modal"  class="login-btn">LOGIN</a> </li>
        				</ul>
        			</div>
           </div>
@@ -45,11 +47,89 @@
       
    	</header>
 
-   	<!-- Banner sectio -->
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade signup-login-modal" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">SIGN UP</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset>
+            <input type="text" class="" placeholder="User Name" />
+          </fieldset>
+          <fieldset>
+            <input type="text" class="" placeholder="Email Address" />
+          </fieldset>
+          <fieldset>
+            <input type="password" class="" placeholder="Password" />
+          </fieldset>
+
+          <input type="button" class="red-btn" value="Register"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade signup-login-modal" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+        <div class="centered-text">
+          <a href="#" class="fb-login"></a>
+        </div>
+        <p class="or-text">OR</p>
+        <form class="login-form">
+          <fieldset>
+            <input type="text" class="" placeholder="Email Address"/>
+          </fieldset>
+          <fieldset>
+            <input type="password" class=""  placeholder="Password" />
+          </fieldset>
+
+          <input type="button" class="red-btn" value="Login"/>
+          <a href="#" class="forgot-pass">Forgot password? </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   	<!-- Banner section -->
 
    	<section class="banner">
+      <!-- Map on Banner section -->
    		<div id="map-canvas"></div>
 
+      <!-- Map content on Banner section -->
+      <div class="content-on-map">
+        <div class="row">
+          <div class="profile-lists">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" class="search-box" placeholder="Enter Zipcode or Company Name" />
+            <span class="glyphicon glyphicon-search"></span>
+          </div>
+        </div>
+      </div>
 
    	</section>
 
@@ -204,7 +284,8 @@
 
 
     <script type="text/javascript" src="scripts/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5HSPGBQQEfdrmjkq9XjetFRYjuzCgWzE&sensor=true">
+    <script src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5HSPGBQQEfdrmjkq9XjetFRYjuzCgWzE&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
