@@ -535,13 +535,14 @@ text-align: center;
 }
 
 .individual-reviewer {
-	margin: 20px 0;
+	margin: 25px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d6d6d6;
 }
 
 .review-actions {
 	margin: 20px 0;
-	padding-bottom: 15px;
-	border-bottom: 1px solid #d6d6d6;
+	/* padding-bottom: 15px; */
 }
 .rated-as {
 background: #ededed;
@@ -968,6 +969,197 @@ text-decoration: none;
 .user_starssel_10 a {
   background: #305d02;
 }
+
+
+/* about us */
+
+.header-search-bar {
+position: absolute;
+width: 300px;
+left: 50%;
+margin-left: -150px;
+top: 8px;
+}
+
+.header-search-bar input[type="text"] {
+width: 98%;
+height: 26px;
+margin: 0 auto;
+display: block;
+border: 1px solid #858585;
+font-size: 13px;
+padding-left: 10px;
+}
+
+
+.header-search-bar .glyphicon {
+position: absolute;
+right: 4px;
+top: 1px;
+color: #fff;
+background: #c62429;
+padding: 4px 10px;
+}
+
+.about-us-banner {
+background: url("images/about.jpg") no-repeat 0 0 transparent;
+min-height: 215px;
+background-size: cover;
+margin-bottom: 25px;
+}
+
+.about-us-banner h1 {
+padding-top: 160px;
+font-size: 34px;
+text-transform: uppercase;
+font-family: Verdana;
+}
+
+.about-section p {
+	color: #333333;
+	font-size: 14px;
+	margin-bottom: 25px;
+	line-height: 20px;
+}
+
+
+
+.profile-banner {
+background: url("images/profile-banner.jpg") no-repeat 0 0 transparent;
+min-height: 215px;
+background-size: cover;
+margin-bottom: 15px;
+padding: 3em 0;
+}
+
+.prof-img-holder {
+background: url("images/profile-pic-holder.png") no-repeat 0 0 transparent;
+width: 151px;
+height: 151px;
+border-radius: 50%;
+overflow: hidden;
+padding: 6px;
+}
+
+.prof-img-holder img {
+max-width: 100%;
+border-radius: 50%;
+position: relative;
+top: 1px;
+}
+
+.banner-profile-detail {
+	position: relative;
+}
+
+.individual-reviewer .profile {
+	width: 35%;
+}
+
+.edit-btn {
+position: absolute;
+right: 0;
+top: 0;
+color: #d7d7d7;
+font-size: 14px;
+}
+
+.banner-profile-detail h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.banner-profile-detail h5 {
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.banner-profile-detail h6 {
+	font-size: 13px;
+	margin-bottom: 15px;
+}	
+
+.profile-counts {
+	border-top: 1px solid rgba(156, 108, 48, 0.2);
+	border-bottom: 1px solid rgba(156, 108, 48, 0.2);
+	padding: 10px 0;
+}
+
+.profile-counts p {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+	font-weight: bold; 
+}
+
+
+.profile-counts p label {
+	font-size: 12px;
+	font-weight: normal; 
+	color: #8f8f8f;
+}
+
+.profile-info-section {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.profile-info-section fieldset {
+	margin-bottom: 20px;
+}
+
+.profile-info-section label {
+	font-size: 14px;
+	color: #424141;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+
+.profile-info-section input[type='text'],
+.profile-info-section textarea {
+	border: none;
+	background: #f4f4f2;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding-left: 5px;
+	color: #000;
+}
+
+.profile-info-section textarea {
+	height: 100px;
+}
+
+
+.profile-info-section input[type='button'] {
+background: #c62329;
+border: 1px solid #94272b;
+box-shadow: 0px 0px 4px #9e262b inset;
+font-size: 14px;
+height: 32px;
+width: 100px;
+margin-top: 30px;
+float: right;
+}
+
+.review-title {
+	color: #464646;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+.reviewed-day {
+	color: #919191;
+	font-size: 13px;
+}
+
+
+
+
 
 
 
