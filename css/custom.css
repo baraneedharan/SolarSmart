@@ -717,6 +717,12 @@ padding-bottom: 12px;
 	border-radius: 0 0 4px 4px;
 }
 
+.modal-body h3 {
+	font-family: 'Roboto', sans-serif;
+	color: #5f5f5f;
+	margin-bottom: 20px;
+}
+
 .signup-login-modal input[type="text"],
 .signup-login-modal input[type="password"] {
 	background: #e8e8e8;
@@ -1157,9 +1163,266 @@ float: right;
 	font-size: 13px;
 }
 
+/* Map page */
+
+.search-content-on-map .search-bar {
+position: absolute;
+left: 6%;
+top: 8%;
+height: 45px;
+background: transparent;
+width: 412px;
+}
+
+.search-content-on-map .search-bar input[type="text"] {
+width: 98%;
+height: 34px;
+margin: 0 auto;
+display: block;
+border: 1px solid #858585;
+font-size: 14px;
+padding-left: 10px;
+}
+
+.search-content-on-map .search-bar .glyphicon {
+position: absolute;
+right: 14px;
+top: 11px;
+color: #fff;
+background: #c62429;
+padding: 8px 15px;
+}
+
+.tabbed-content {
+	position: absolute;
+top: 110px;
+left: 7%;
+}
+
+
+.tab-contents {
+	background: rgba(255,255,255,.8);
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #bcbcbc;
+}
+
+.review-details-onmap img {
+
+}
+
+.review-details-onmap {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 12px;
+}
+
+.review-details-onmap h3 {
+	color: #5f5f5f;
+	font-size: 16px;
+	font-weight: 500; 
+	margin-bottom: 5px;
+}
+
+
+.review-details-onmap .total-installs {
+	font-size: 12px;
+	font-weight: 300;	
+	color: #5f5f5f;
+	margin-bottom: 5px;
+}
+
+
+.review-details-onmap .location-contact {
+	font-size: 12px;
+	font-weight: 400;
+	color: #8f8f8f;
+	margin-bottom: 6px;
+}
+
+
+.review-details-onmap .rating-desc {
+	font-size: 12px;
+	font-weight: 300;
+	color: #5f5f5f;
+	margin-bottom: 6px;
+}
+
+.ind-review-onmap {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    padding-top: 12px;
+}
+
+#map_page {
+	min-height: 640px;
+}
+
+div.tabs li {
+    display: inline-block;
+    width: 164px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+    margin: 0 5px;
+    border: 1px solid #bababa;
+    border-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+
+    background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dcdcdc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dcdcdc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#dcdcdc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#dcdcdc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#dcdcdc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+div.tabs li.active {
+    background: #fff;
+}
 
 
 
+
+
+div.tabs li a {
+    font-family: 'Roboto', sans-serif;
+    color: #5f5f5f;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+div.tabs li.active a {
+ 	font-weight: 500;
+}
+
+div.tabs ul {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
+div.filters-onmap {
+    position: absolute;
+    top: 56px;
+    left: 600px;
+}
+div.custom-select {
+    display: inline-block;
+    float: left;
+}
+
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+width: 158px;
+background: #fefefe;
+font-family: 'Roboto', sans-serif;
+}
+
+.bootstrap-select > .btn {
+width: 100%;
+padding: 4px 25px 4px 5px;
+background: #fefefe;
+border-radius: 0;
+}
+
+.map-profile {
+	background: #fff;
+	padding: 10px;
+	z-index: 999999;
+	position: relative;
+}
+
+.map-profile-info {
+font-family: 'Roboto', sans-serif;
+margin-left: 10px;	
+max-width: 268px;
+}
+
+.map-profile-info h3 {
+    color: #333333;
+
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 6px;
+}
+
+.map-profile-info p {
+    font-weight: 400;
+	
+    color: #5b5b5b;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* star rating */
+
+.rating{
+	width:80px;
+	height:16px;
+	margin: 8px 0 0;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+	background: url(images/star-matrix.png) no-repeat 0 0;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.nostar {background-position:0 0}
+.onestar {background-position:0 -16px}
+.twostar {background-position:0 -32px}
+.threestar {background-position:0 -48px}
+.fourstar {background-position:0 -64px}
+.fivestar {background-position:0 -80px}
+ul.rating li {
+	cursor: pointer;
+ /*ie5 mac doesn't like it if the list is floated\*/
+	float:left;
+	/* end hide*/
+	text-indent:-999em;
+}
+ul.rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+/*ul.rating li a:hover {
+	z-index:2;
+	width:80px;
+	height:16px;
+	overflow:hidden;
+	left:0;	
+	background: url(images/star-matrix.png) no-repeat 0 0
+}
+ul.rating li.one a:hover {background-position:0 -96px;}
+ul.rating li.two a:hover {background-position:0 -112px;}
+ul.rating li.three a:hover {background-position:0 -128px}
+ul.rating li.four a:hover {background-position:0 -144px}
+ul.rating li.five a:hover {background-position:0 -160px}*/
 
 
 

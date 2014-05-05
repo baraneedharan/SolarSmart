@@ -109,6 +109,27 @@
   </div>
 </div>
 
+<!-- Forgot password Modal -->
+<div class="modal fade signup-login-modal" id="forgotpassword_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">FORGOT PASSWORD</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Please enter your email address to receive details for your new password</h3>
+        <form class="login-form">
+          <fieldset>
+            <input type="text" class="" placeholder="Email Address"/>
+          </fieldset>
+
+          <input type="button" class="red-btn" value="Submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
    	<!-- Banner section -->
 
@@ -309,6 +330,13 @@
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
+      $(".forgot-pass").click(function(){
+        $('#login_modal').modal('hide');
+        $('#forgotpassword_modal').modal('show');
+      });
+
     </script>
 
 
